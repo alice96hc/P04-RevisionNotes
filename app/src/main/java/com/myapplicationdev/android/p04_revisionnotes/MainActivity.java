@@ -84,10 +84,10 @@ public class MainActivity extends AppCompatActivity {
                 ArrayList<Note> al = db2.getAllNotes();
                 db2.close();
 
-                RevisionNotesArrayAdapter aa = new RevisionNotesArrayAdapter(SecondActivity.this,R.layout.row,al);
+                RevisionNotesArrayAdapter aa = new RevisionNotesArrayAdapter(MainActivity.this,R.layout.row,al);
                 lv.setAdapter(aa);
             }
         });
-
     }
 }
+
